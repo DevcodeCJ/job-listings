@@ -1,0 +1,91 @@
+/* ===== Global Styles ===== */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  color: hsl(0, 0%, 17%);
+  line-height: 2.25;
+  font-size: 1rem;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.7rem;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+h4 {
+  font-size: 0.875rem;
+}
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  padding: 3rem 2rem;
+  width: 100%;
+  transition: all ease-in-out 0.7s;
+  z-index: 1;
+}
+main {
+  height: 1800px;
+  display: grid;
+  grid-template: 22.5% 2.8% 27.7% 16% 20% 16% / 70% 30%;
+}
+nav {
+  width: 75%;
+}
+nav .animation {
+  display: none;
+  position: absolute;
+  height: 3px;
+  bottom: 0;
+  z-index: 0;
+  background: white;
+  transition: all 0.5s ease 0s;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+nav li {
+  list-style: none;
+  min-width: 25%;
+  text-align: center;
+}
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+p {
+  color: hsl(0, 0%, 63%);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* ===== Sections ===== */
