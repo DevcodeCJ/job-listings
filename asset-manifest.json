@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/job-listings/static/css/main.83670703.chunk.css",
-    "main.js": "/job-listings/static/js/main.7b588338.chunk.js",
-    "main.js.map": "/job-listings/static/js/main.7b588338.chunk.js.map",
-    "runtime-main.js": "/job-listings/static/js/runtime-main.68b26528.js",
-    "runtime-main.js.map": "/job-listings/static/js/runtime-main.68b26528.js.map",
-    "static/js/2.de717a8f.chunk.js": "/job-listings/static/js/2.de717a8f.chunk.js",
-    "static/js/2.de717a8f.chunk.js.map": "/job-listings/static/js/2.de717a8f.chunk.js.map",
-    "static/js/3.73fba3e4.chunk.js": "/job-listings/static/js/3.73fba3e4.chunk.js",
-    "static/js/3.73fba3e4.chunk.js.map": "/job-listings/static/js/3.73fba3e4.chunk.js.map",
+    "main.css": "/job-listings/static/css/main.cde9c7eb.chunk.css",
+    "main.js": "/job-listings/static/js/main.8c865296.chunk.js",
+    "main.js.map": "/job-listings/static/js/main.8c865296.chunk.js.map",
+    "runtime-main.js": "/job-listings/static/js/runtime-main.4cffebca.js",
+    "runtime-main.js.map": "/job-listings/static/js/runtime-main.4cffebca.js.map",
+    "static/js/2.d8c8be01.chunk.js": "/job-listings/static/js/2.d8c8be01.chunk.js",
+    "static/js/2.d8c8be01.chunk.js.map": "/job-listings/static/js/2.d8c8be01.chunk.js.map",
+    "static/js/3.c6a58725.chunk.js": "/job-listings/static/js/3.c6a58725.chunk.js",
+    "static/js/3.c6a58725.chunk.js.map": "/job-listings/static/js/3.c6a58725.chunk.js.map",
     "index.html": "/job-listings/index.html",
-    "static/css/main.83670703.chunk.css.map": "/job-listings/static/css/main.83670703.chunk.css.map",
-    "static/js/2.de717a8f.chunk.js.LICENSE.txt": "/job-listings/static/js/2.de717a8f.chunk.js.LICENSE.txt",
+    "static/css/main.cde9c7eb.chunk.css.map": "/job-listings/static/css/main.cde9c7eb.chunk.css.map",
+    "static/js/2.d8c8be01.chunk.js.LICENSE.txt": "/job-listings/static/js/2.d8c8be01.chunk.js.LICENSE.txt",
     "static/media/account.903d6cd0.svg": "/job-listings/static/media/account.903d6cd0.svg",
     "static/media/App.css": "/job-listings/static/media/bg-header-mobile.9cb13612.svg",
     "static/media/eyecam-co.0abb14e8.svg": "/job-listings/static/media/eyecam-co.0abb14e8.svg",
     "static/media/faceit.54a148ce.svg": "/job-listings/static/media/faceit.54a148ce.svg",
+    "static/media/icon-remove.70c075ce.svg": "/job-listings/static/media/icon-remove.70c075ce.svg",
     "static/media/insure.4d535e7e.svg": "/job-listings/static/media/insure.4d535e7e.svg",
     "static/media/loop-studios.7778c957.svg": "/job-listings/static/media/loop-studios.7778c957.svg",
     "static/media/manage.5a528a96.svg": "/job-listings/static/media/manage.5a528a96.svg",
@@ -25,9 +26,9 @@
     "static/media/the-air-filter-company.9b55f644.svg": "/job-listings/static/media/the-air-filter-company.9b55f644.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.68b26528.js",
-    "static/js/2.de717a8f.chunk.js",
-    "static/css/main.83670703.chunk.css",
-    "static/js/main.7b588338.chunk.js"
+    "static/js/runtime-main.4cffebca.js",
+    "static/js/2.d8c8be01.chunk.js",
+    "static/css/main.cde9c7eb.chunk.css",
+    "static/js/main.8c865296.chunk.js"
   ]
 }
