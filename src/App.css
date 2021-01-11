@@ -42,9 +42,7 @@ h4 {
 }
 header {
   height: 125px;
-  background: url("./images/bg-header-mobile.svg") no-repeat center
-    hsl(180, 29%, 50%);
-  background-size: cover;
+  transition: background 0.4s ease-in;
 }
 main {
   padding: 0 7.5%;
@@ -176,6 +174,16 @@ span {
   cursor: pointer;
   font-weight: 700;
 }
+.header-mobile {
+  background: url("./images/bg-header-mobile.svg") no-repeat center
+    hsl(180, 29%, 50%);
+  background-size: cover;
+}
+.header-desktop {
+  background: url("./images/bg-header-desktop.svg") no-repeat center
+    hsl(180, 29%, 50%);
+  background-size: cover;
+}
 .highlight {
   background-color: hsl(180, 29%, 50%);
   border-bottom-left-radius: 7.5px;
@@ -234,4 +242,52 @@ span {
   font-weight: 400;
   color: hsl(180, 29%, 50%);
   text-decoration: underline;
+}
+
+/* ===== Media Queries ===== */
+@media screen and (max-width: 320px) {
+  h4 {
+    margin-right: 0.9rem;
+  }
+  span {
+    font-size: 0.65rem;
+    padding: 3.5px 10px 0px;
+    margin-right: 0.65rem;
+  }
+  .job-specs p {
+    font-size: 0.7rem;
+    margin-right: 0.6rem;
+  }
+  /* ===== Attribution ===== */
+  .attribution {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .card-section {
+    display: flex;
+    align-items: center;
+  }
+  .filter {
+    margin: 0 1rem 0 0;
+  }
+  .filter-ctn {
+    padding: 1rem 6% 1rem;
+  }
+  .job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 4% 25px;
+    margin-bottom: 30px;
+  }
+  .logo {
+    margin-right: 20px;
+    position: static;
+    width: 85px;
+  }
+  .text-ctn {
+    border-style: none;
+    padding: 0;
+  }
 }

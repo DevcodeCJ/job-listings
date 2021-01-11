@@ -8,9 +8,20 @@ import { dataJs } from "./dataJs";
 import Attribution from "./components/Attribution";
 
 function App() {
+  //UseStates
   const [jobs, setJobs] = useState(dataJs);
   const [filters, setFilters] = useState([]);
 
+  // UseEffects
+  useEffect(() => {
+    checkBackground();
+  }, []);
+
+  useEffect(() => {
+    checkFilter();
+  }, [filters]);
+
+  // Functions
   const checkFilter = () => {
     const jobContainer = document.querySelector("main");
     const filterContainer = document.querySelector(".filter-ctn");
@@ -26,9 +37,19 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    checkFilter();
-  }, [filters]);
+  const checkBackground = () => {
+    const header = document.querySelector("header");
+    if (window.innerWidth > 1023) {
+      header.classList.remove("header-mobile");
+      header.classList.add("header-desktop");
+    } else {
+      header.classList.remove("header-desktop");
+      header.classList.add("header-mobile");
+    }
+  };
+
+  // Events
+  window.addEventListener("resize", checkBackground);
 
   return (
     <div>
@@ -40,9 +61,7 @@ function App() {
         setFilters={setFilters}
         setJobs={setJobs}
       />
-      <footer>
-        <Attribution />
-      </footer>
+      <Attribution />
     </div>
   );
 }
