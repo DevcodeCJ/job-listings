@@ -1,7 +1,8 @@
 import React from "react";
 import removeImg from "../images/icon-remove.svg";
+import { dataJs } from "../dataJs";
 
-function FilterList({ filters, setFilters }) {
+function FilterList({ filters, setFilters, setJobs }) {
   const handleClick = (e) => {
     let closeBtn, buttonName, newFilterList;
     closeBtn = e.target;
@@ -10,6 +11,11 @@ function FilterList({ filters, setFilters }) {
     newFilterList = filters.filter((filterItem) => filterItem !== buttonName);
 
     setFilters(newFilterList);
+  };
+
+  const clearFilters = () => {
+    setFilters([]);
+    setJobs(dataJs);
   };
 
   return (
@@ -28,6 +34,9 @@ function FilterList({ filters, setFilters }) {
             </button>
           </span>
         ))}
+      </div>
+      <div className="clear-ctn">
+        <h4 onClick={clearFilters}>clear</h4>
       </div>
     </div>
   );

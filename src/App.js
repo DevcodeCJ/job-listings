@@ -12,19 +12,17 @@ function App() {
   const [filters, setFilters] = useState([]);
 
   const checkFilter = () => {
-    let filterLength;
     const jobContainer = document.querySelector("main");
     const filterContainer = document.querySelector(".filter-ctn");
-    const filterWrapper = document.querySelector(".filter-wrapper");
-    filterLength = filters.length;
+    const filterLength = filters.length;
 
     if (filterLength === 0) {
       filterContainer.classList.add("filter-ctn-display");
       jobContainer.classList.add("main-display");
+      setJobs(dataJs);
     } else {
       filterContainer.classList.remove("filter-ctn-display");
       jobContainer.classList.remove("main-display");
-      filterWrapper.classList.add("filter-wrapper-display");
     }
   };
 
@@ -35,8 +33,13 @@ function App() {
   return (
     <div>
       <header></header>
-      <FilterList filters={filters} setFilters={setFilters} />
-      <JobList jobs={jobs} filters={filters} setFilters={setFilters} />
+      <FilterList filters={filters} setFilters={setFilters} setJobs={setJobs} />
+      <JobList
+        jobs={jobs}
+        filters={filters}
+        setFilters={setFilters}
+        setJobs={setJobs}
+      />
       <footer>
         <Attribution />
       </footer>

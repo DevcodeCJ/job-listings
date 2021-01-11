@@ -3,7 +3,7 @@ import React from "react";
 import FilterButton from "./FilterButton";
 import JobImage from "./JobImage";
 
-function Job({ eachJob, filters, setFilters }) {
+function Job({ eachJob, filters, setFilters, jobs, setJobs }) {
   let buttonsArr;
   buttonsArr = [
     eachJob.role,
@@ -38,6 +38,9 @@ function Job({ eachJob, filters, setFilters }) {
             button={button}
             filters={filters}
             setFilters={setFilters}
+            eachJob={eachJob}
+            jobs={jobs}
+            setJobs={setJobs}
           />
         ))}
       </div>
